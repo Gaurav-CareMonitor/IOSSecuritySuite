@@ -74,7 +74,7 @@ public class IOSSecuritySuite {
      ```
      */
     public static func amIRunInEmulator() -> Bool {
-        return EmulatorChecker.amIRunInEmulator()
+        return EmulatorChecker.amIRunInEmulator() && !MacChecker.amIRunInMac()
     }
 
     /**
